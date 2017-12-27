@@ -1,0 +1,10 @@
+{% extends "shop/base.html" %}
+{%load staticfiles%}
+{% block body_block%}
+
+<div class="container">
+   {%for obj in qs%}
+   {{obj}}</br>
+   {% endfor%}
+</div>
+{% endblock%}
